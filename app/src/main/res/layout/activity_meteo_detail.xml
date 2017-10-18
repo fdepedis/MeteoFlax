@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="it.flaviodepedis.meteoflax.activity.MeteoDetailActivity">
+
+        <LinearLayout
+            android:id="@+id/intestazioneUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCityMeteo"
+                style="@style/TextLabelCityCountryDetailItemTheme"
+                android:layout_weight="2"
+                android:text="Roma" />
+
+            <TextView
+                android:id="@+id/tvCountryMeteo"
+                style="@style/TextLabelCityCountryDetailItemTheme"
+                android:layout_weight="1"
+                android:text="IT" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/intestazioneDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intestazioneUp"
+            android:background="@xml/border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvIconMeteo"
+                android:layout_width="@dimen/dimen_90dp"
+                android:layout_height="@dimen/dimen_90dp"
+                android:layout_weight="0"
+                android:background="@drawable/a01d"
+                android:textSize="@dimen/text_dimen_36sp" />
+
+            <TextView
+                android:id="@+id/tvDescMeteo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="cielo sereno"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="@dimen/text_dimen_26sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailTempMeteo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/intestazioneDown"
+            android:background="@xml/border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detailTempDescMeteo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10dp"
+                android:paddingTop="@dimen/dimen_10dp">
+
+                <TextView
+                    android:id="@+id/tvMinTempMeteoLabel"
+                    style="@style/TextLabelTempDetailItemTheme"
+                    android:text="@string/temp_min_label" />
+
+                <TextView
+                    android:id="@+id/tvMaxTempMeteoLabel"
+                    style="@style/TextLabelTempDetailItemTheme"
+                    android:text="@string/temp_max_label" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detailTempCelsiusMeteo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMinTempMeteoValue"
+                    style="@style/TextValueTempDetailItemTheme"
+                    android:text="21" />
+
+                <TextView
+                    android:id="@+id/tvMaxTempMeteoValue"
+                    style="@style/TextValueTempDetailItemTheme"
+                    android:text="23" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailTempMeteo"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/coordinateStringMeteo"
+                style="@style/LayoutCoordDetailItemTheme" >
+
+                <TextView
+                    android:id="@+id/blank"
+                    style="@style/LayoutDescDetailItemTheme" />
+
+                <TextView
+                    android:id="@+id/tvLatitudeMeteoLabel"
+                    style="@style/TextCoordDetailItemTheme"
+                    android:gravity="start"
+                    android:text="@string/latitude_label" />
+
+                <TextView
+                    android:id="@+id/tvLongitudeMeteoLabel"
+                    style="@style/TextCoordDetailItemTheme"
+                    android:gravity="start"
+                    android:text="@string/longitude_label" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/coordinateMeteoValue"
+                style="@style/LayoutCoordDetailItemTheme" >
+
+                <TextView
+                    android:id="@+id/tvMapMeteoLabel"
+                    style="@style/LayoutDescDetailItemTheme"
+                    android:text="@string/view_map_label"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:id="@+id/tvLatitudeMeteoValue"
+                    style="@style/TextCoordDetailItemTheme"
+                    android:gravity="center"
+                    android:text="51" />
+
+                <TextView
+                    android:id="@+id/tvLongitudeMeteoValue"
+                    style="@style/TextCoordDetailItemTheme"
+                    android:gravity="center"
+                    android:text="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherStringHPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/coord"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHumidityMeteoLabel"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="@string/humidity_label" />
+
+            <TextView
+                android:id="@+id/tvPressureMeteoLabel"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="@string/pressure_label" />
+
+            <TextView
+                android:id="@+id/tvSeaLevelMeteoLabel"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="@string/sea_level_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherValueHPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otherStringHPS"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHumidityMeteoValue"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/tvPressureMeteoValue"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/tvSeaLevelMeteoValue"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherStringWind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otherValueHPS"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvWindSpeedMeteoLabel"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="@string/wind_speed_label" />
+
+            <TextView
+                android:id="@+id/tvDegWindMeteoLabel"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="@string/deg_Wind_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherValueWind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otherStringWind"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvWindSpeedMeteoValue"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/tvDegWindMeteoValue"
+                style="@style/TextHPSDetailItemTheme"
+                android:text="10" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

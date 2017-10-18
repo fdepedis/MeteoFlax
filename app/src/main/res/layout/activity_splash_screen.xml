@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/text_app_splash"
+        style="@style/TextLogoSplashScreenTheme"
+        android:text="@string/app_name_splash" />
+
+    <ImageView
+        android:id="@+id/imgLogoSplashScreen"
+        style="@style/ImageLogoSplashScreenTheme"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/text_legal_property"
+        style="@style/LegalPropertySplashScreenTheme"
+        android:text="@string/legal_property_label" />
+
+</RelativeLayout>

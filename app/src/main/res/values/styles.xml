@@ -1,0 +1,193 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Primary dark theme color of the app (sets color of status bar) -->
+        <item name="colorPrimaryDark">#FB8C00</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+
+    <!-- Legal Property Splash Screen Theme  -->
+    <style name="LegalPropertySplashScreenTheme" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginTop">@dimen/dimen_100dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_15dp</item>
+        <item name="android:textColor">@color/textColorMeteo</item>
+        <item name="android:textSize">@dimen/text_dimen_14sp</item>
+    </style>
+
+    <!-- Text Logo Splash Screen Theme -->
+    <style name="TextLogoSplashScreenTheme" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_dimen_30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dimen_150dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/textColorSplashScreen</item>
+    </style>
+
+    <!-- Image Logo Splash Screen Theme -->
+    <style name="ImageLogoSplashScreenTheme" >
+        <item name="android:layout_width">@dimen/dimen_100dp</item>
+        <item name="android:layout_height">@dimen/dimen_100dp</item>
+        <item name="android:layout_below">@id/text_app_splash</item>
+        <item name="android:layout_marginTop">@dimen/dimen_30dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- Search Text Location Theme -->
+    <style name="SearchTextLocationTheme" >
+        <item name="android:layout_width">@dimen/dimen_200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_45dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_75dp</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:paddingStart">@dimen/dimen_10dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_15dp</item>
+    </style>
+
+    <!-- Text Date Item Theme -->
+    <style name="TextDateItemTheme" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorMeteo</item>
+        <item name="android:textSize">@dimen/text_dimen_14sp</item>
+    </style>
+
+    <!-- Text Hour Item Theme -->
+    <style name="TextHourItemTheme" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/textColorMeteo</item>
+        <item name="android:textSize">@dimen/text_dimen_14sp</item>
+    </style>
+
+    <!-- Icon Item Theme -->
+    <style name="IconItemTheme" >
+        <item name="android:layout_width">@dimen/dimen_56dp</item>
+        <item name="android:layout_height">@dimen/dimen_56dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Text Description Item Theme -->
+    <style name="TextDescriptionItemTheme" >
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">@dimen/dimen_10dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/textColorMeteoLocation</item>
+        <item name="android:textSize">@dimen/text_dimen_16sp</item>
+    </style>
+
+    <!-- Text Temperature Item Theme -->
+    <style name="TextTemperatureItemTheme" >
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">@dimen/dimen_40dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColorMeteoLocation</item>
+        <item name="android:textSize">@dimen/text_dimen_16sp</item>
+    </style>
+
+    <!-- Text HPS Detail Item Theme -->
+    <style name="TextHPSDetailItemTheme" >
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@xml/border</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:textSize">@dimen/text_dimen_18sp</item>
+    </style>
+
+    <!-- Layout Coord Detail Item Theme -->
+    <style name="LayoutCoordDetailItemTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@xml/border</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Layout Desc Detail Item Theme -->
+    <style name="LayoutDescDetailItemTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_5dp</item>
+        <item name="android:textSize">@dimen/text_dimen_15sp</item>
+    </style>
+
+    <!-- Text Coord Detail Item Theme -->
+    <style name="TextCoordDetailItemTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingStart">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:textSize">@dimen/text_dimen_26sp</item>
+    </style>
+
+    <!-- Text Label Temp Detail Item Theme -->
+    <style name="TextLabelTempDetailItemTheme" >
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textSize">@dimen/text_dimen_18sp</item>
+    </style>
+
+    <!-- Text Value Temp Detail Item Theme -->
+    <style name="TextValueTempDetailItemTheme" parent="TextLabelTempDetailItemTheme">
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:textSize">@dimen/text_dimen_26sp</item>
+    </style>
+
+    <!-- Text Label City Country Detail Item Theme -->
+    <style name="TextLabelCityCountryDetailItemTheme" >
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@xml/border</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:textSize">@dimen/text_dimen_36sp</item>
+    </style>
+
+
+</resources>

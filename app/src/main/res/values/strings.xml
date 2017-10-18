@@ -1,0 +1,154 @@
+<resources>
+    <!-- Text to display application name -->
+    <string name="app_name">Meteo Flax</string>
+
+    <!-- General Label application -->
+    <string name="app_name_splash">Meteo Flax</string>
+    <string name="title_activity_touch_splash">TouchSplashActivity</string>
+    <string name="btn_search_label">Search</string>
+    <string name="meteo_label">Meteo Condition</string>
+    <string name="meteo_detail_label">Meteo Detail</string>
+    <string name="settings_menu_item_label">Settings</string>
+    <string name="title_settings_label">Meteo Settings</string>
+    <string name="temp_min_label">Temp. Min</string>
+    <string name="temp_max_label">Temp. Max</string>
+    <string name="latitude_label">Latitude:</string>
+    <string name="longitude_label">Longitude:</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="pressure_label">Pressure</string>
+    <string name="sea_level_label">Sea Level</string>
+    <string name="wind_speed_label">Wind Speed</string>
+    <string name="deg_Wind_label">Degree Wind</string>
+    <string name="view_map_label">View Map</string>
+    <string name="legal_property_label">FDP development - rev.2.0</string>
+
+    <!-- Empty label information -->
+    <string name="empty_meteo_label">No meteo available</string>
+    <string name="empty_internet_connection_label">No internet connection</string>
+    <string name="empty_city_label">No city available</string>
+    <string name="empty_country_label">No country available</string>
+    <string name="empty_latitude_label">No latitude available</string>
+    <string name="empty_longitude_label">No longitude available</string>
+    <string name="empty_date_label">No date available</string>
+    <string name="empty_temp_label">No temperature available</string>
+    <string name="empty_mim_temp_label">No min temperature available</string>
+    <string name="empty_max_temp_label">No max temperature available</string>
+    <string name="empty_pressure_label">No pressure available</string>
+    <string name="empty_sea_level_label">No sea level available</string>
+    <string name="empty_humidity_label">No humidity available</string>
+    <string name="empty_speed_label">No speed wind available</string>
+    <string name="empty_degree_label">No degree wind available</string>
+
+    <!-- Hint label information -->
+    <string name="hint_insert_city_label">Insert City Name</string>
+
+    <!-- Strings For Minimum Count Meteo Event Preference -->
+    <string name="settings_count_label">Count Meteo Event</string>
+    <string name="settings_count_key" translatable="false">min_count</string>
+    <string name="settings_count_default" translatable="false">15</string>
+
+    <!-- Strings For Languages Preference -->
+    <string name="settings_languages_label">Languages</string>
+    <string name="settings_languages_key" translatable="false">languages</string>
+    <string name="settings_languages_default" translatable="false">it</string>
+
+    <!-- Array Setting Languages Label -->
+    <string name="arabic_lang_label">Arabic</string>
+    <string name="bulgarian_lang_label">Bulgarian</string>
+    <string name="catalan_lang_label">Catalan</string>
+    <string name="czech_lang_label">Czech</string>
+    <string name="german_lang_label">German</string>
+    <string name="greek_lang_label">Greek</string>
+    <string name="english_lang_label">English</string>
+    <string name="persian_lang_label">Persian (Farsi)</string>
+    <string name="finnish_lang_label">Finnish</string>
+    <string name="french_lang_label">French</string>
+    <string name="galician_lang_label">Galician</string>
+    <string name="croatian_lang_label">Croatian</string>
+    <string name="hungarian_lang_label">Hungarian</string>
+    <string name="italian_lang_label">Italian</string>
+    <string name="japanese_lang_label">Japanese</string>
+    <string name="korean_lang_label">Korean</string>
+    <string name="latvian_lang_label">Latvian</string>
+    <string name="lithuanian_lang_label">Lithuanian</string>
+    <string name="macedonian_lang_label">Macedonian</string>
+    <string name="dutch_lang_label">Dutch</string>
+    <string name="polish_lang_label">Polish</string>
+    <string name="portuguese_lang_label">Portuguese</string>
+    <string name="romanian_lang_label">Romanian</string>
+    <string name="russian_lang_label">Russian</string>
+    <string name="swedish_lang_label">Swedish</string>
+    <string name="slovak_lang_label">Slovak</string>
+    <string name="slovenian_lang_label">Slovenian</string>
+    <string name="spanish_lang_label">Spanish</string>
+    <string name="turkish_lang_label">Turkish</string>
+    <string name="ukrainian_lang_label">Ukrainian</string>
+    <string name="vietnamese_lang_label">Vietnamese</string>
+    <string name="chinese_simplified_lang_label">Chinese Simplified</string>
+    <string name="chinese_traditional_lang_label">Chinese Traditional</string>
+
+    <!-- Array Setting Languages Value -->
+    <string name="arabic_lang_value">ar</string>
+    <string name="bulgarian_lang_value">bg</string>
+    <string name="catalan_lang_value">ca</string>
+    <string name="czech_lang_value">cz</string>
+    <string name="german_lang_value">de</string>
+    <string name="greek_lang_value">el</string>
+    <string name="english_lang_value">en</string>
+    <string name="persian_lang_value">fa</string>
+    <string name="finnish_lang_value">fi</string>
+    <string name="french_lang_value">fr</string>
+    <string name="galician_lang_value">gl</string>
+    <string name="croatian_lang_value">hr</string>
+    <string name="hungarian_lang_value">hu</string>
+    <string name="italian_lang_value">it</string>
+    <string name="japanese_lang_value">ja</string>
+    <string name="korean_lang_value">kr</string>
+    <string name="latvian_lang_value">la</string>
+    <string name="lithuanian_lang_value">lt</string>
+    <string name="macedonian_lang_value">mk</string>
+    <string name="dutch_lang_value">nl</string>
+    <string name="polish_lang_value">pl</string>
+    <string name="portuguese_lang_value">pt</string>
+    <string name="romanian_lang_value">ro</string>
+    <string name="russian_lang_value">ru</string>
+    <string name="swedish_lang_value">se</string>
+    <string name="slovak_lang_value">sk</string>
+    <string name="slovenian_lang_value">sl</string>
+    <string name="spanish_lang_value">es</string>
+    <string name="turkish_lang_value">tr</string>
+    <string name="ukrainian_lang_value">ua</string>
+    <string name="vietnamese_lang_value">vi</string>
+    <string name="chinese_simplified_lang_value">zh_cn</string>
+    <string name="chinese_traditional_lang_value">zh_tw</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array label for Languages Preference -->
+    <string-array name="settings_languages_labels">
+        <item>@string/arabic_lang_label</item>
+        <item>@string/bulgarian_lang_label</item>
+        <item>@string/catalan_lang_label</item>
+        <item>@string/czech_lang_label</item>
+        <item>@string/german_lang_label</item>
+        <item>@string/greek_lang_label</item>
+        <item>@string/english_lang_label</item>
+        <item>@string/persian_lang_label</item>
+        <item>@string/finnish_lang_label</item>
+        <item>@string/french_lang_label</item>
+        <item>@string/galician_lang_label</item>
+        <item>@string/croatian_lang_label</item>
+        <item>@string/hungarian_lang_label</item>
+        <item>@string/italian_lang_label</item>
+        <item>@string/japanese_lang_label</item>
+        <item>@string/korean_lang_label</item>
+        <item>@string/latvian_lang_label</item>
+        <item>@string/lithuanian_lang_label</item>
+        <item>@string/macedonian_lang_label</item>
+        <item>@string/dutch_lang_label</item>
+        <item>@string/polish_lang_label</item>
+        <item>@string/portuguese_lang_label</item>
+        <item>@string/romanian_lang_label</item>
+        <item>@string/russian_lang_label</item>
+        <item>@string/swedish_lang_label</item>
+        <item>@string/slovak_lang_label</item>
+        <item>@string/slovenian_lang_label</item>
+        <item>@string/spanish_lang_label</item>
+        <item>@string/turkish_lang_label</item>
+        <item>@string/ukrainian_lang_label</item>
+        <item>@string/vietnamese_lang_label</item>
+        <item>@string/chinese_simplified_lang_label</item>
+        <item>@string/chinese_traditional_lang_label</item>
+    </string-array>
+
+    <!-- Array value for Languages Preference -->
+    <string-array name="settings_languages_values">
+        <item>@string/arabic_lang_value</item>
+        <item>@string/bulgarian_lang_value</item>
+        <item>@string/catalan_lang_value</item>
+        <item>@string/czech_lang_value</item>
+        <item>@string/german_lang_value</item>
+        <item>@string/greek_lang_value</item>
+        <item>@string/english_lang_value</item>
+        <item>@string/persian_lang_value</item>
+        <item>@string/finnish_lang_value</item>
+        <item>@string/french_lang_value</item>
+        <item>@string/galician_lang_value</item>
+        <item>@string/croatian_lang_value</item>
+        <item>@string/hungarian_lang_value</item>
+        <item>@string/italian_lang_value</item>
+        <item>@string/japanese_lang_value</item>
+        <item>@string/korean_lang_value</item>
+        <item>@string/latvian_lang_value</item>
+        <item>@string/lithuanian_lang_value</item>
+        <item>@string/macedonian_lang_value</item>
+        <item>@string/dutch_lang_value</item>
+        <item>@string/polish_lang_value</item>
+        <item>@string/portuguese_lang_value</item>
+        <item>@string/romanian_lang_value</item>
+        <item>@string/russian_lang_value</item>
+        <item>@string/swedish_lang_value</item>
+        <item>@string/slovak_lang_value</item>
+        <item>@string/slovenian_lang_value</item>
+        <item>@string/spanish_lang_value</item>
+        <item>@string/turkish_lang_value</item>
+        <item>@string/ukrainian_lang_value</item>
+        <item>@string/vietnamese_lang_value</item>
+        <item>@string/chinese_simplified_lang_value</item>
+        <item>@string/chinese_traditional_lang_value</item>
+    </string-array>
+</resources>
+

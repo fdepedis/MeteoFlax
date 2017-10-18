@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item that displays an earthquake -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/dimen_5dp"
+    android:paddingStart="@dimen/dimen_5dp">
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_date_value"
+            style="@style/TextDateItemTheme"
+            tools:text="Mar 6, 2010" />
+
+        <TextView
+            android:id="@+id/tv_time_value"
+            style="@style/TextHourItemTheme"
+            tools:text="20:00 PM" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_icon_meteo"
+        style="@style/IconItemTheme"
+        android:background="@drawable/a09d" />
+
+    <TextView
+        android:id="@+id/tv_weather_desc_value"
+        style="@style/TextDescriptionItemTheme"
+        android:text="Cielo Nuvoloso" />
+
+    <TextView
+        android:id="@+id/tv_temperature_value"
+        style="@style/TextTemperatureItemTheme"
+        android:layout_weight="1.2"
+        android:text="20.8°" />
+
+    <TextView
+        android:id="@+id/tv_icon_arrow"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_keyboard_arrow_right_black" />
+
+</LinearLayout>

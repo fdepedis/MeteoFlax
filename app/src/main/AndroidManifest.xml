@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.flaviodepedis.meteoflax">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="it.flaviodepedis.meteoflax.activity.SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="it.flaviodepedis.meteoflax.activity.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="it.flaviodepedis.meteoflax.activity.MeteoActivity"
+            android:label="@string/meteo_label"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="it.flaviodepedis.meteoflax.activity.MainActivity">
+            <!--
+            Gestione del back activity (freccetta in alto a sx per tornare indietro,
+            deve essere gestito per ogni activity)
+            -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.flaviodepedis.meteoflax.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="it.flaviodepedis.meteoflax.adapter.MeteoAdapter" >
+        </activity>
+        <activity
+            android:name="it.flaviodepedis.meteoflax.activity.MeteoDetailActivity"
+            android:label="@string/meteo_detail_label"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:parentActivityName="it.flaviodepedis.meteoflax.activity.MeteoActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.flaviodepedis.meteoflax.activity.MeteoActivity" />
+        </activity>
+        <activity
+            android:name="it.flaviodepedis.meteoflax.activity.SettingsActivity"
+            android:label="@string/title_settings_label">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.flaviodepedis.meteoflax.activity.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
