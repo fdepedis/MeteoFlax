@@ -22,6 +22,5 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="@string/btn_search_label" />
-
     </LinearLayout>
 </android.support.v4.widget.SwipeRefreshLayout>

@@ -38,6 +38,7 @@
     <string name="empty_humidity_label">No humidity available</string>
     <string name="empty_speed_label">No speed wind available</string>
     <string name="empty_degree_label">No degree wind available</string>
+    <string name="empty_city_name">Insert city name</string>
 
     <!-- Hint label information -->
     <string name="hint_insert_city_label">Insert City Name</string>

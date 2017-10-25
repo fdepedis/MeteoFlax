@@ -29,7 +29,7 @@
         <activity
             android:name="it.flaviodepedis.meteoflax.activity.MeteoActivity"
             android:label="@string/meteo_label"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+
             android:parentActivityName="it.flaviodepedis.meteoflax.activity.MainActivity">
             <!--
             Gestione del back activity (freccetta in alto a sx per tornare indietro,
@@ -45,7 +45,7 @@
         <activity
             android:name="it.flaviodepedis.meteoflax.activity.MeteoDetailActivity"
             android:label="@string/meteo_detail_label"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+
             android:parentActivityName="it.flaviodepedis.meteoflax.activity.MeteoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
