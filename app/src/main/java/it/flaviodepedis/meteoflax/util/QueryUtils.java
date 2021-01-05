@@ -2,7 +2,7 @@ package it.flaviodepedis.meteoflax.util;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -97,6 +97,7 @@ public final class QueryUtils {
      */
     private static String makeHttpRequest(URL url) throws IOException {
         String jsonResponse = "";
+        Log.e(LOG_TAG, "url: " + url);
 
         // If the URL is null, then return early.
         if (url == null) {

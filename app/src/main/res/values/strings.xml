@@ -20,7 +20,7 @@
     <string name="wind_speed_label">Wind Speed</string>
     <string name="deg_Wind_label">Degree Wind</string>
     <string name="view_map_label">View Map</string>
-    <string name="legal_property_label">FDP development - rev.2.0</string>
+    <string name="legal_property_label">by FDP development - rev.2.0</string>
 
     <!-- Empty label information -->
     <string name="empty_meteo_label">No meteo available</string>

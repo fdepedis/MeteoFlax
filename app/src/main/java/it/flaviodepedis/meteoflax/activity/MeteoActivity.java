@@ -8,9 +8,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.preference.PreferenceManager;
-import android.support.v4.app.NavUtils;
-import android.support.v4.app.TaskStackBuilder;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
+import androidx.core.app.TaskStackBuilder;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -52,7 +52,7 @@ public class MeteoActivity extends AppCompatActivity
      * URL for meteo data from the openweathermap.org dataset
      */
     private static String OPEN_WEATHER_MAP_REQUEST_URL =
-            "http://api.openweathermap.org/data/2.5/forecast";
+            "https://api.openweathermap.org/data/2.5/forecast";
 
     /**
      * TextView that is displayed when the list is empty

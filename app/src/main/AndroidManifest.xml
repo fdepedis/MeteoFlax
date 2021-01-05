@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="it.flaviodepedis.meteoflax">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -39,7 +41,8 @@
                 android:value="it.flaviodepedis.meteoflax.activity.MainActivity" />
         </activity>
         <activity
-            android:name="it.flaviodepedis.meteoflax.adapter.MeteoAdapter" >
+            android:name="it.flaviodepedis.meteoflax.adapter.MeteoAdapter"
+            tools:ignore="Instantiatable">
         </activity>
         <activity
             android:name="it.flaviodepedis.meteoflax.activity.MeteoDetailActivity"
